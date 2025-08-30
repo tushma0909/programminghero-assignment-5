@@ -7,12 +7,13 @@
   <!-- Tailwind + DaisyUI CDN -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Ag+Text+2:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body class="bg-base-200">
+<body c>
 
   <!--  Navbar -->
-  <div class="navbar bg-base-100 shadow-md px-4 w-[1720px] h-[100px]">
+  <div class="navbar bg-base-100 shadow-md px-4 w-full h-[100px]">
     <div class="flex-1">
       <!-- Logo + Title -->
     
@@ -22,7 +23,7 @@
         <text x="0" y="45"  font-weight="900" font-size="25" fill="#006747">Service</text>
       </svg>
     </div>
-    <div class="flex-none gap-3">
+    <div class=" hidden md:flex flex-none gap-3 ">
       <!-- Heart Count -->
       <button class="btn btn-ghost w-[123px] h-[52px] rounded-8xl bg-[#41FF6B]/10" id="heart-btn"><span class="font-bold" id="heart-count">0</span><img class="w-[30px] h-
         [30px]" src="./assets/heart.png" alt="logo" ></button>
@@ -33,17 +34,107 @@
     </div>
   </div>
 
-   Hero Section
-  <section class="hero min-h-[60vh]" style="background: linear-gradient(135deg, #0ea5e9, #6366f1);">
+   <!-- Hero Section -->
+  <section class="hero min-h-[5] " style="background: linear-gradient(#1d1f1f, #094215, #19221b) ">
     <div class="hero-content text-center text-neutral-content flex flex-col items-center">
-      Top Logo
-      <img src="your-logo.png" alt="hero-logo" class="h-20 w-20 mb-4" />
-      Title
-      <h1 class="text-4xl font-bold text-white">Emergency Hotline Directory</h1> -->
-      Slogan
-      <p class="mt-4 text-lg text-white">"Fast • Reliable • Always Ready"</p>
+      <!-- Top Logo -->
+      <img src="./assets/logo-dark.png" alt="hero-logo" class="h-20 w-20 mb-4" />
+      <!-- Title -->
+      <h1 class=" font-hind text-4xl w-1600 h-55n  font-bold text-white mb-[11px]">জরুরি সেবা ডিরেক্টরি</h1> 
+      <!-- Slogan -->
+      <p class="mt-4 text-lg text-white  mb-[11px]">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
     </div>
    </section> 
 
-</body>
-</html>
+
+<!-- Parent Container -->
+<section class="p-6 flex flex-row bg-green-100  md:grid-cols-2 lg:grid-cols-3 gap-10">
+<div class="flex flex-col lg:flex-row w-full gap-6 ">
+    <div class="grid grid-cols-1 sm:grid-cols-2 w-full lg:grid-cols-3 gap-8">
+  
+      <!-- Card 1 -->
+      
+      <div class="bg-white shadow-lg rounded-xl p-6 flex flex-col gap-4 w-[400px] h-[360px]">
+        <div class="flex justify-between items-center gap-3">
+          <i class="fas fa-bell text-2xl text-red-500"></i>
+          <i class="fas fa-heart text-2xl text-pink-500 cursor-pointer"></i>
+         
+        </div>
+        <div class=" flex flex-row justify-between">
+        <img src="./assets/emergency.png" alt="Alarm" class="w-10 h-10">
+        <button class="likeBtn ml-30">💗</button>
+       </div>
+        <div>
+          <h2 class="font-hind font-bold text-[24px] text-gray-900">জাতীয় জরুরী সেবা</h2>
+          <p class="text-gray-500 text-[21px]">National Emergency</p>
+        </div>
+        <div>
+          <h1 class="text-[32px] font-bold text-gray-900">999</h1>
+          <button class="mt-2 px-3 py-1 rounded-xl bg-gray-200 font-hind text-[16px]">সার্বজনীন</button>
+        </div>
+        <div class="mt-auto flex gap-2">
+            <button class="flex-1 h-10 flex items-center justify-center gap-1 bg-gray-100  rounded-lg text-sm">
+                <i class="fas fa-copy"></i><span class="text-[20px]">📋 Copy</span>
+              </button>
+          <button class="flex-1 h-10 flex items-center justify-center gap-1 bg-green-500 text-white rounded-lg text-sm">
+            <i class="fas fa-phone"></i> <span class="text-[20px]">📞 Call</span>
+          </button>
+        </div>
+      </div>
+  
+      <!-- Card 2 -->
+      <div class="bg-white shadow-md rounded-[10px] p-4 flex flex-col gap-4 w-[400px] h-[360px]">
+        <div class="flex justify-between items-center">
+          <i class="fas fa-bell text-2xl text-red-500"></i>
+          <i class="fas fa-heart text-2xl text-pink-500 cursor-pointer"></i>
+        </div>
+        <div class=" flex flex-row justify-between">
+            <img src="./assets/police.png" alt="Alarm" class="w-10 h-10">
+            <button class="likeBtn ml-30">💗</button> </div>
+        <div>
+          <h2 class="font-hind font-bold text-[24px] text-gray-900">পুলিশ</h2>
+          <p class="text-gray-500 text-[21px]">Police</p>
+        </div>
+        <div>
+          <h1 class="text-[32px] font-bold text-gray-900">999</h1>
+          <button class="mt-2 px-3 py-1 rounded-xl bg-gray-200 font-hind text-[16px]">পুলিশ</button>
+        </div>
+        <div class="mt-auto flex gap-2">
+            <button class="flex-1 h-10 flex items-center justify-center gap-1 bg-gray-100  rounded-lg text-sm">
+                <i class="fas fa-copy"></i><span class="text-[20px]">📋 Copy</span>
+              </button>
+          <button class="flex-1 h-10 flex items-center justify-center gap-1 bg-green-500 text-white rounded-lg text-sm">
+            <i class="fas fa-phone"></i> <span class="text-[20px]">📞 Call</span>
+          </button>
+        </div>
+      </div>
+  
+      <!-- Card 3 -->
+      <div class="bg-white shadow-md rounded-[10px] p-4 flex flex-col gap-4 w-[400px] h-[360px]">
+        <div class="flex justify-between items-center">
+          <i class="fas fa-bell text-2xl text-red-500"></i>
+          <i class="fas fa-heart text-2xl text-pink-500 cursor-pointer"></i>
+        </div>
+
+        <div class=" flex flex-row justify-between">
+            <img src="./assets/fire-service.png" alt="Alarm" class="w-10 h-10">
+            <button class="likeBtn ml-30">💗</button> </div>
+        <div>
+          <h2 class="font-hind font-bold text-[24px] text-gray-900">ফায়ার সার্ভিস</h2>
+          <p class="text-gray-500 text-[21px]">Fire Service</p>
+        </div>
+        <div>
+          <h1 class="text-[32px] font-bold text-gray-900">999</h1>
+          <button class="mt-2 px-3 py-1 rounded-xl bg-gray-200 font-hind text-[16px]">ফায়ার</button>
+        </div>
+        <div class="mt-auto flex gap-2">
+            <button class="flex-1 h-10 flex items-center justify-center gap-1 bg-gray-100  rounded-lg text-sm">
+                <i class="fas fa-copy"></i><span class="text-[20px]">📋 Copy</span>
+              </button>
+          <button class="flex-1 h-10 flex items-center justify-center gap-1 bg-green-500 text-white rounded-lg text-sm">
+            <i class="fas fa-phone"></i> <span class="text-[20px]">📞 Call</span>
+          </button>
+        </div>
+      </div>
+    </body>
+    </html>
